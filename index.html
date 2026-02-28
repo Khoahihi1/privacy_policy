@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chính sách Quyền riêng tư – Khoahihi Tools</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+            background: #f9fafb;
+            color: #374151;
+            line-height: 1.7;
+        }
+
+        .container {
+            max-width: 760px;
+            margin: 0 auto;
+            padding: 48px 24px 80px;
+        }
+
+        header {
+            border-bottom: 2px solid #e5e7eb;
+            padding-bottom: 24px;
+            margin-bottom: 36px;
+        }
+
+        .badge {
+            display: inline-block;
+            background: #ede9fe;
+            color: #6d28d9;
+            font-size: 12px;
+            font-weight: 600;
+            padding: 3px 10px;
+            border-radius: 100px;
+            margin-bottom: 12px;
+            letter-spacing: 0.04em;
+        }
+
+        h1 {
+            font-size: 28px;
+            font-weight: 800;
+            color: #111827;
+            margin-bottom: 6px;
+        }
+
+        .subtitle {
+            font-size: 14px;
+            color: #9ca3af;
+        }
+
+        h2 {
+            font-size: 17px;
+            font-weight: 700;
+            color: #111827;
+            margin: 32px 0 10px;
+            padding-left: 14px;
+            border-left: 3px solid #6366f1;
+        }
+
+        p {
+            font-size: 14.5px;
+            color: #374151;
+            margin-bottom: 10px;
+        }
+
+        ul {
+            padding-left: 20px;
+            margin-bottom: 10px;
+        }
+
+        li {
+            font-size: 14.5px;
+            color: #374151;
+            margin-bottom: 6px;
+        }
+
+        .highlight {
+            background: #f0fdf4;
+            border: 1px solid #bbf7d0;
+            border-radius: 10px;
+            padding: 14px 18px;
+            margin: 20px 0;
+            font-size: 14px;
+            color: #166534;
+        }
+
+        .warning {
+            background: #fefce8;
+            border: 1px solid #fef08a;
+            border-radius: 10px;
+            padding: 14px 18px;
+            margin: 20px 0;
+            font-size: 14px;
+            color: #854d0e;
+        }
+
+        footer {
+            margin-top: 60px;
+            padding-top: 20px;
+            border-top: 1px solid #e5e7eb;
+            font-size: 13px;
+            color: #9ca3af;
+            text-align: center;
+        }
+
+        a {
+            color: #6366f1;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="badge">Privacy Policy</div>
+            <h1>Chính sách Quyền riêng tư</h1>
+            <p class="subtitle">Khoahihi Tools · Phiên bản 4.0.0 · Cập nhật: 28/02/2026</p>
+        </header>
+
+        <div class="highlight">
+            Khoahihi Tools cam kết <strong>không bán, không chia sẻ, và không thu thập trái phép</strong> bất kỳ dữ liệu
+            cá nhân nào của người dùng với bên thứ ba ngoài phạm vi vận hành của ứng dụng.
+        </div>
+
+        <h2>1. Thông tin chúng tôi thu thập</h2>
+        <p>Để cung cấp dịch vụ, Khoahihi Tools yêu cầu người dùng cung cấp các thông tin sau:</p>
+        <ul>
+            <li><strong>Email và mật khẩu:</strong> Dùng để tạo tài khoản đăng nhập thông qua Firebase Authentication.
+                Mật khẩu được mã hóa bởi Firebase và chúng tôi không có quyền truy cập trực tiếp.</li>
+            <li><strong>Tên hiển thị (Name):</strong> Dùng để cá nhân hóa giao diện.</li>
+            <li><strong>API Key (Gemini, Groq):</strong> Được người dùng tự nhập để kích hoạt tính năng AI. Các key này
+                được lưu mã hóa trong Firestore và chỉ tài khoản chủ sở hữu mới có thể đọc.</li>
+            <li><strong>Thông tin điền form (AutoForm):</strong> Các trường như họ tên, MSSV, email sinh viên mà người
+                dùng tự nhập để điền tự động vào Google Form. Dữ liệu này do người dùng kiểm soát hoàn toàn.</li>
+        </ul>
+
+        <h2>2. Cách chúng tôi sử dụng dữ liệu</h2>
+        <ul>
+            <li>Xác thực danh tính người dùng khi đăng nhập.</li>
+            <li>Đồng bộ hóa cài đặt và thông tin điền form giữa các thiết bị của cùng một tài khoản.</li>
+            <li>Gọi API Gemini và Groq với Key do người dùng cung cấp để xử lý câu hỏi AI.</li>
+            <li>Hiển thị thông báo cập nhật phiên bản từ nhà phát triển.</li>
+        </ul>
+
+        <h2>3. Dữ liệu chúng tôi KHÔNG thu thập</h2>
+        <ul>
+            <li>Chúng tôi <strong>không theo dõi phím bấm (keylogger)</strong> của người dùng.</li>
+            <li>Chúng tôi <strong>không đọc nội dung trang web</strong> ngoài phạm vi cần thiết để điền form khi người
+                dùng nhấn nút "Điền thông tin".</li>
+            <li>Chúng tôi <strong>không thu thập dữ liệu duyệt web</strong> (lịch sử, bookmark, cookie).</li>
+            <li>Chúng tôi <strong>không gửi dữ liệu đến bất kỳ server bên thứ ba nào</strong> ngoài Firebase (Google) và
+                API AI mà người dùng tự cấu hình.</li>
+        </ul>
+
+        <h2>4. Lưu trữ và Bảo mật</h2>
+        <p>Dữ liệu được lưu trữ tại:</p>
+        <ul>
+            <li><strong>Chrome Local Storage:</strong> Lưu cục bộ trên trình duyệt của người dùng. Không ai khác có thể
+                truy cập.</li>
+            <li><strong>Firebase Cloud Firestore:</strong> Được bảo vệ bởi Security Rules, đảm bảo mỗi người dùng chỉ có
+                thể đọc/ghi dữ liệu của chính mình (dựa trên UID xác thực).</li>
+        </ul>
+
+        <div class="warning">
+            <strong>Lưu ý về API Key:</strong> Chúng tôi khuyến nghị người dùng không chia sẻ API Key với người khác.
+            Nhà phát triển không chịu trách nhiệm nếu API Key bị lộ do thiết bị của người dùng bị xâm phạm.
+        </div>
+
+        <h2>5. Quyền hạn Trình duyệt (Permissions)</h2>
+        <p>Extension yêu cầu các quyền sau và lý do cụ thể:</p>
+        <ul>
+            <li><strong>activeTab / scripting:</strong> Để chèn script điền form và hỗ trợ Elearning khi người dùng chủ
+                động nhấn nút – không tự chạy ngầm.</li>
+            <li><strong>storage:</strong> Để lưu cài đặt API Key và thông tin AutoForm cục bộ trên trình duyệt.</li>
+            <li><strong>clipboardRead:</strong> Để hỗ trợ copy đáp án quiz trong một số tính năng phụ.</li>
+            <li><strong>host_permissions (&lt;all_urls&gt;):</strong> Cần thiết vì tính năng AutoForm hoạt động trên bất
+                kỳ Google Form nào, không giới hạn domain cụ thể. Script chỉ được kích hoạt khi người dùng nhấn nút,
+                không tự động theo dõi bất kỳ trang nào.</li>
+        </ul>
+
+        <h2>6. Liên hệ</h2>
+        <p>Nếu bạn có câu hỏi về chính sách quyền riêng tư này, hãy liên hệ:</p>
+        <ul>
+            <li>Facebook: <a href="https://www.facebook.com/khoangdangg/" target="_blank">fb.com/khoangdangg</a></li>
+            <li>Email: dangkhoash@gmail.com</li>
+        </ul>
+
+        <footer>
+            &copy; 2026 Khoahihi Tools · Được tạo bởi Khoa – Sinh viên Đại học Tôn Đức Thắng<br>
+            Chính sách này có hiệu lực từ ngày 28/02/2026.
+        </footer>
+    </div>
+</body>
+
+</html>
